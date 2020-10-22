@@ -1,0 +1,274 @@
+proxies:
+
+
+proxy-groups:
+  - name: ALL
+    type: select
+    use:
+      - ALL
+  - name: AU
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - AU
+  - name: CA
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - CA
+  - name: CH
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - CH
+  - name: CN
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - CN
+  - name: CZ
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - CZ
+  - name: DE
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - DE
+  - name: DK
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - DK
+  - name: FR
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - FR
+  - name: GB
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - GB
+  - name: HK
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - HK
+  - name: IN
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - IN
+  - name: IT
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - IT
+  - name: JP
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - JP
+  - name: KR
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - KR
+  - name: NL
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - NL
+  - name: NZ
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - NZ
+  - name: RO
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - RO
+  - name: RU
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - RU
+  - name: SG
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - SG
+  - name: TW
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - TW
+  - name: US
+    type: url-test
+    url: 'http://www.gstatic.com/generate_204'
+    interval: 600
+    use:
+      - US
+
+
+proxy-providers:
+  ALL:
+    type: http
+    path: ./ALL.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies"
+    interval: 86400
+    health-check:
+      enable: false
+      interval: 900
+      url: http://www.gstatic.com/generate_204
+
+  AU:
+    type: http
+    path: ./AU.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=AU"
+    interval: 86400
+
+  CA:
+    type: http
+    path: ./CA.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=CA"
+    interval: 86400
+
+  CH:
+    type: http
+    path: ./CH.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=CH"
+    interval: 86400
+
+  CN:
+    type: http
+    path: ./CN.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=CN"
+    interval: 86400
+
+  CZ:
+    type: http
+    path: ./CZ.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=CZ"
+    interval: 86400
+
+  DE:
+    type: http
+    path: ./DE.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=DE"
+    interval: 86400
+
+  DK:
+    type: http
+    path: ./DK.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=DK"
+    interval: 86400
+
+  FR:
+    type: http
+    path: ./FR.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=FR"
+    interval: 86400
+
+  GB:
+    type: http
+    path: ./GB.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=GB"
+    interval: 86400
+
+  HK:
+    type: http
+    path: ./HK.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=HK"
+    interval: 86400
+
+  IN:
+    type: http
+    path: ./IN.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=IN"
+    interval: 86400
+
+  IT:
+    type: http
+    path: ./IT.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=IT"
+    interval: 86400
+
+  JP:
+    type: http
+    path: ./JP.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=JP"
+    interval: 86400
+
+  KR:
+    type: http
+    path: ./KR.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=KR"
+    interval: 86400
+
+  NL:
+    type: http
+    path: ./NL.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=NL"
+    interval: 86400
+
+  NZ:
+    type: http
+    path: ./NZ.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=NZ"
+    interval: 86400
+
+  RO:
+    type: http
+    path: ./RO.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=RO"
+    interval: 86400
+
+  RU:
+    type: http
+    path: ./RU.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=RU"
+    interval: 86400
+
+  SG:
+    type: http
+    path: ./SG.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=SG"
+    interval: 86400
+
+  TW:
+    type: http
+    path: ./TW.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=TW"
+    interval: 86400
+
+  US:
+    type: http
+    path: ./US.yaml
+    url: "https://caicai.herokuapp.com/clash/proxies?c=US"
+    interval: 86400
+
+
